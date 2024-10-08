@@ -9,9 +9,9 @@ La verificación ha de tener lugar en una función llamada verificarNumeroTarjet
 function pideCredito(){
     let numeroTarjeta = prompt ("Introduce el numero de tarjeta"); 
     if (verificarNumeroTarjeta(numeroTarjeta)) {
-        console.log("El número de tarjeta es válido.");
+        alert("El número de tarjeta es válido.");
     } else {
-        console.log("El número de tarjeta NO es válido.");
+        alert("El número de tarjeta NO es válido.");
     }
 }
 

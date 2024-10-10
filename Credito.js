@@ -7,7 +7,7 @@ La verificación ha de tener lugar en una función llamada verificarNumeroTarjet
 */
 
 function pideCredito(){
-    let numeroTarjeta = prompt ("Introduce el numero de tarjeta"); 
+    let numeroTarjeta = prompt ("Introduce el numero de tarjeta"); //El prompt te devuelve siempre un String
     if (verificarNumeroTarjeta(numeroTarjeta)) {
         alert("El número de tarjeta es válido.");
     } else {
@@ -31,11 +31,11 @@ function verificarNumeroTarjeta(numero) {
 
     // Recorremos los dígitos desde el último hacia el primero
     for (let i = numStr.length - 1; i >= 0; i--) {
-        let digito = parseInt(numStr[i], 10);
+        let digito = parseInt(numStr[i], 10); //El segundo digito nos indica que queremos interpretar el digito en base 10
 
         // Si es el segundo dígito desde el final, lo multiplicamos por 2
         if (esSegundoDigito) {
-            digito *= 2;
+            digito = digito * 2;
             // Si el resultado es mayor que 9, sumamos los dígitos del producto (restamos 9 es equivalente)
             if (digito > 9) {
                 digito = digito - 9;

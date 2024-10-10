@@ -15,8 +15,6 @@ function pideCredito(){
     }
 }
 
-
-
 function verificarNumeroTarjeta(numero) {
     // Convertimos el número a string para poder trabajar con los dígitos
     let numStr = numero.toString();
@@ -31,7 +29,7 @@ function verificarNumeroTarjeta(numero) {
 
     // Recorremos los dígitos desde el último hacia el primero
     for (let i = numStr.length - 1; i >= 0; i--) {
-        let digito = parseInt(numStr[i], 10); //El segundo digito nos indica que queremos interpretar el digito en base 10
+        let digito = parseInt(numStr[i]);
 
         // Si es el segundo dígito desde el final, lo multiplicamos por 2
         if (esSegundoDigito) {

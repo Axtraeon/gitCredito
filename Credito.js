@@ -38,12 +38,12 @@ function verificarNumeroTarjeta(numero) {
             digito *= 2;
             // Si el resultado es mayor que 9, sumamos los dígitos del producto (restamos 9 es equivalente)
             if (digito > 9) {
-                digito -= 9;
+                digito = digito - 9;
             }
         }
 
         // Sumamos el dígito (modificado o no) a la suma total
-        suma += digito;
+        suma = suma + digito;
 
         // Alternamos si es segundo dígito o no
         esSegundoDigito = !esSegundoDigito;

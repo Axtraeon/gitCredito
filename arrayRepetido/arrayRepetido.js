@@ -27,4 +27,4 @@ function repetidos(matrizRepetidos) {
   }
   
   let final = repetidos(matrizRepetidos);
-  console.log(final); // [1, 3]
+  console.log(final); // [3, 1]
